@@ -1,0 +1,25 @@
+/* Design tokens — fill from the reference's measured system (measure.js palette + type scale). */
+:root{
+  --bg:#0e0e0e; --fg:#fafafa; --muted:#8a8a8a;
+  --r-card:20px; --r-img:15px; --pill:999px;
+  --gutter:20px; --col:600px;
+  --ease:cubic-bezier(.2,.65,.25,1);
+  --spring:cubic-bezier(.34,1.42,.5,1); /* overshoot ≈ Framer/GSAP spring pop; flatten if ref doesn't overshoot */
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:system-ui,sans-serif;line-height:1.2;letter-spacing:-.02em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(var(--col),100% - (var(--gutter) * 2));margin-inline:auto}
+
+/* Scroll/entry reveal — matches the captured Framer appear curve (opacity+rise+scale, spring). */
+.reveal{opacity:0;transform:translateY(14px) scale(.945);will-change:opacity,transform;
+  transition:opacity .5s var(--ease),transform .68s var(--spring)}
+.reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  *{scroll-behavior:auto!important}
+}

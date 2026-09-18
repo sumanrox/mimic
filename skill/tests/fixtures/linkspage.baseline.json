@@ -1,0 +1,13 @@
+{
+  "note": "Baseline captured from the REFERENCE (source of truth). verify.mjs asserts the build against these, not against itself.",
+  "viewports": {
+    "desktop": { "width": 1440, "height": 900, "probes": [
+      { "selector": "body", "background": "rgb(18,18,18)" },
+      { "selector": ".wrap", "metrics": { "w": 600 }, "tol": 2 },
+      { "selector": "h1", "fontSize": "52px", "color": "rgb(250,250,250)" }
+    ]},
+    "mobile": { "width": 390, "height": 844, "probes": [
+      { "selector": ".wrap", "metrics": { "w": 350 }, "tol": 2 }
+    ]}
+  }
+}

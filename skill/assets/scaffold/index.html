@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>__TITLE__</title>
+  <meta name="description" content="__DESCRIPTION__" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Only needed for the 3D tier (three-scene.mjs). three.js addon loaders import the bare
+       specifier "three", so an import map is REQUIRED or module resolution fails. -->
+  <script type="importmap">{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+  } }</script>
+</head>
+<body>
+  <main class="wrap">
+    <!-- sections here; add class="reveal" to anything that animates in -->
+  </main>
+  <script src="reveal.js" defer></script>
+</body>
+</html>
