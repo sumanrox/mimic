@@ -3,18 +3,48 @@
   "version": "1.0.0",
   "description": "Reverse-engineer & mirror any website — layout, typography, motion, and WebGL/3D — to pixel fidelity. A Claude Code skill.",
   "type": "module",
-  "bin": { "mimic-skill": "bin/install.mjs" },
-  "files": ["bin", "skill", "mimic.skill", "README.md", "LICENSE"],
+  "bin": {
+    "mimic-skill": "bin/install.mjs"
+  },
+  "files": [
+    "bin",
+    "skill",
+    "mimic.skill",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "install-skill": "node bin/install.mjs",
     "test": "node --test skill/tests/compare.test.mjs"
   },
-  "keywords": ["claude","claude-code","claude-skill","website","clone","replicate","mirror",
-    "reverse-engineering","design-to-code","playwright","frontend","motion","animation","webgl","three.js"],
-  "engines": { "node": ">=18" },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "claude-skill",
+    "website",
+    "clone",
+    "replicate",
+    "mirror",
+    "reverse-engineering",
+    "design-to-code",
+    "playwright",
+    "frontend",
+    "motion",
+    "animation",
+    "webgl",
+    "three.js"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "license": "MIT",
   "author": "Suman Roy",
-  "repository": { "type": "git", "url": "https://github.com/sumanrox/mimic.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumanrox/mimic.git"
+  },
   "homepage": "https://github.com/sumanrox/mimic#readme",
-  "bugs": { "url": "https://github.com/sumanrox/mimic/issues" }
+  "bugs": {
+    "url": "https://github.com/sumanrox/mimic/issues"
+  }
 }
