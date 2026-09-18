@@ -27,6 +27,6 @@ function listen(port, tries = 20) {
     if (e.code === 'EADDRINUSE' && tries > 0) listen(port + 1, tries - 1);
     else { console.error(e); process.exit(1); }
   });
-  server.listen(port, () => console.log(`SERVING http://localhost:${port}/`));
+  server.listen(port, '127.0.0.1', () => console.log(`SERVING http://localhost:${port}/`)); // loopback only
 }
 listen(pref);
