@@ -1,0 +1,5 @@
+# transient reconnaissance / validation captures
+.playwright-mcp/
+ref-*.png
+mine-*.png
+*-verify/
